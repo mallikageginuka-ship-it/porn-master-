@@ -1,92 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porn Master - Video Upload</title>
+    <title>Porn Master</title>
     <style>
-        body {
+        body { 
+            background: #121212; 
+            color: #ffffff; 
+            text-align: center; 
             font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            text-align: center;
-            padding: 50px;
             margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: #ff9900;
-            font-size: 3em;
-            margin-bottom: 5px;
-        }
-        p { color: #aaaaaa; margin-bottom: 30px; }
-       .upload-container {
-            background-color: #1e1e1e;
-            padding: 40px;
-            border-radius: 10px;
-            display: inline-block;
-            box-shadow: 0px 0px 15px rgba(255, 153, 0, 0.2);
-        }
-        input[type="file"] { margin: 20px 0; color: #ffffff; }
-        button {
-            background-color: #ff9900;
+        header { 
+            background: #ff9900; 
             color: #000;
-            border: none;
-            padding: 12px 25px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
+            padding: 20px; 
+            font-size: 28px; 
+            font-weight: bold; 
         }
-        button:hover { background-color: #e68a00; }
-        #preview-container { margin-top: 40px; display: none; }
-        video {
-            max-width: 80%;
-            border-radius: 10px;
-            border: 2px solid #ff9900;
-            background-color: #000;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Porn Master</h1>
-    <p>Upload and Preview Your Videos Here</p>
-
-    <div class="upload-container">
-        <input type="file" id="videoUpload" accept="video/*">
-        <br>
-        <button onclick="uploadVideo()">Preview Video</button>
-        <p style="font-size:12px; color:#ff9900">Note: File eka GitHub eke upload karala thiyenna one. E nisa me button eke wenne preview witharai.</p>
-    </div>
-
-    <div id="preview-container">
-        <h3>Video Preview:</h3>
-        <video id="videoPreview" controls></video>
-    </div>
-
-    <script>
-        const videoUpload = document.getElementById('videoUpload');
-        const videoPreview = document.getElementById('videoPreview');
-        const previewContainer = document.getElementById('preview-container');
-
-        videoUpload.addEventListener('change', function() {
-            const file = this.files[0];
-            if (file) {
-                const fileURL = URL.createObjectURL(file);
-                videoPreview.src = fileURL;
-                previewContainer.style.display = 'block';
-            }
-        });
-
-        function uploadVideo() {
-            const file = videoUpload.files[0];
-            if (!file) {
-                alert("Pehala video ekak select karanna!");
-                return;
-            }
-            alert("Preview ready! \n\nAththatama save karanna nam video eka GitHub repo eke 'Upload files' walin upload karanna.");
-        }
-    </script>
-</body>
-</html>
+        .video-box { 
+            background: #1e1e1e; 
+            margin: 30px auto; 
+            padding: 25px; 
+            border-radius: 10px; 
+            max-width: 900px;
+            box-shadow: 0px 0px 15px rgba(255, 153, 
